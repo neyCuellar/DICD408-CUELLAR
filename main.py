@@ -247,6 +247,7 @@ def etl_pipeline():
         print(album_df)
         print(artist_df)
 
+        user_df.to_csv('user_df.csv', index = False)
         playlist_df.to_csv('playlist_df.csv', index = False)
         track_df.to_csv('track_df.csv', index = False)
         album_df.to_csv('album_df.csv', index = False)
